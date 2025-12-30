@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos Online IA</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="hero">
+        <div class="container">
+            <h1>Domina la Inteligencia Artificial</h1>
+            <p>Aprende a construir el futuro con nuestros cursos prácticos y avanzados.</p>
+            <a href="#cursos" class="btn-primary">Ver Cursos</a>
+        </div>
+    </header>
+
+    <main id="cursos" class="container">
+        <section class="courses-grid">
+            <div class="course-card">
+                <div class="card-image" style="background-color: #4a90e2;" ></div>
+                <div class="card-content">
+                    <h3>Introducción a Python</h3>
+                    <p>Fundamentos de programación para IA.</p>
+                    <button class="btn-secondary">Inscribirse</button>
+                </div>
+            </div>
+            <div class="course-card">
+                <div class="card-image" style="background-color: #50e3c2;"></div>
+                <div class="card-content">
+                    <h3>Machine Learning Básico</h3>
+                    <p>Aprende los algoritmos esenciales.</p>
+                    <button class="btn-secondary">Inscribirse</button>
+                </div>
+            </div>
+            <div class="course-card">
+                <div class="card-image" style="background-color: #b8e986;"></div>
+                <div class="card-content">
+                    <h3>Deep Learning con PyTorch</h3>
+                    <p>Redes neuronales profundas desde cero.</p>
+                    <button class="btn-secondary">Inscribirse</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Cursos IA. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
